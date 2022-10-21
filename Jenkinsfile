@@ -3,13 +3,13 @@ pipeline {
     stages {
         stage('Install requirements') {
             steps {
-                sh "pip3 install -r requirements.txt"
+                sh "pip install -r requirements.txt"
             }
         }
 
         stage('Create database') {
             steps {
-                sh "python3 create.py"
+                sh "python create.py"
             }
         }
 
@@ -21,7 +21,7 @@ pipeline {
 
         stage('Run the application') {
             steps {
-                sh "python3 app.py"
+                sh "python app.py"
             }
         }
     }
