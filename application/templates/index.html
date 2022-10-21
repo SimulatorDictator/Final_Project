@@ -1,0 +1,21 @@
+{% block body_content %}
+
+<h1> Welcome to the Board Game Cafe! </h1>
+
+{% for games in games %}
+<p> {{ games.gid }}</p>
+<p>{{ games.name }}</p>
+
+
+{% endfor %}
+
+{% for customers in customers %}
+
+<p>{{ customers.cid}}</p>
+<p>{{ customers.name }}</p>
+<p>{{ customers.table }}</p>
+<p>{{ customers.fk_gid }}</p>
+
+{% endfor %}
+
+{% endblock body_content %}
