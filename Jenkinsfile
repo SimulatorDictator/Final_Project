@@ -9,7 +9,7 @@ pipeline {
 
         stage('Create database') {
             steps {
-                sh "python create.py"
+                sh "python3 create.py"
             }
         }
 
@@ -21,7 +21,7 @@ pipeline {
 
         stage('Run the application') {
             steps {
-                sh "python app.py"
+                sh "python3 app.py"
             }
         }
     }
