@@ -1,28 +1,24 @@
 pipeline {
     agent any 
     stages {
-        stage('Install requirements') {
+        stage('Tests') {
             steps {
-                sh "pip install -r requirements.txt"
+                dir('flask-app'){
+                    sh "echo this is a test"
+                    // sh "rm application/test/test_int*"
+                    // sh "bash test.sh"
+                }
             }
         }
 
-        stage('Create database') {
+        stage('docker-compose build and run') {
             steps {
-                sh "python3 create.py"
+                sh "/bin/bash -c 'docker stop \$(docker ps -a -q)'"
+                sh "/bin/bash -c 'docker rm \$(docker ps -a -q)'"
+                sh "/bin/bash -c 'docker rmi \$(docker images -a -q)'"
+                sh "docker-compose up -d"
             }
         }
 
-        stage('Run the tests'){
-            steps {
-                sh "echo 'This is where your tests are going to go'"
-            }
-        }
-
-        stage('Run the application') {
-            steps {
-                sh "python3 app.py"
-            }
-        }
     }
 }
