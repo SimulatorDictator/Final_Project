@@ -9,6 +9,18 @@ services:
     build: ./flask-app
     container_name: flask-app
 
+  mysql: 
+    build: ./db
+    container_name: mysql
+    ports:
+      - target: 3306
+        published: 3306
+    
+    environment: 
+      MYSQL_ALLOW_EMPTY_PASSWORD: true
+      MYSQL_ROOT_PASSWORD: ${ROOT_PASSWORD} 
+      MYSQL_DATABASE: flask-app
+
   # This is going to be where I put my configuration to create my nginx container 
   nginx:
   # If this image is not available locally we will pull it from dockerhub. 
@@ -31,3 +43,4 @@ services:
     # This will not work unless flask-app is running. 
     depends_on: 
     - "flask-app"
+    - "mysql"

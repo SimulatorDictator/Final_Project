@@ -7,5 +7,5 @@ CREATE TABLE IF NOT EXISTS Customers (
         name VARCHAR(30),
         table INT,
         fk_gid INT, 
-        FOREIGN KEY (fk_gid) REFERENCES Games(id)
+        FOREIGN KEY (fk_gid) REFERENCES Games(gid)
 );
