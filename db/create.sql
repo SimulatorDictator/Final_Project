@@ -1,11 +1,12 @@
-CREATE TABLE IF NOT EXISTS Games (
-        gid INT PRIMARY KEY AUTO_INCREMENT,
-        name VARCHAR(30) 
+CREATE TABLE IF NOT EXISTS games (
+	gid INT PRIMARY KEY AUTO_INCREMENT,
+	name VARCHAR(30)
 );
-CREATE TABLE IF NOT EXISTS Customers (
-        cid INT PRIMARY KEY AUTO_INCREMENT, 
-        name VARCHAR(30),
-        table INT,
-        fk_gid INT, 
-        FOREIGN KEY (fk_gid) REFERENCES Games(gid)
+
+CREATE TABLE IF NOT EXISTS customers (
+	cid INT PRIMARY KEY AUTO_INCREMENT,
+	name VARCHAR(30),
+	table_ INT,
+	fk_gid INT,
+	FOREIGN KEY (fk_gid) REFERENCES games(gid)
 );

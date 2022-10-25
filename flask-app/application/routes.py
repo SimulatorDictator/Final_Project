@@ -32,7 +32,7 @@ def add():
     if form.validate_on_submit():
         customers = Customers(
             name = form.name.data,
-            table = form.table.data,
+            table_ = form.table_.data,
             fk_gid = form.fk_gid.data
         )
         db.session.add(customers)
@@ -62,9 +62,9 @@ def update(cid):
     customers = Customers.query.get(cid)
     if form.validate_on_submit():
         customers.name = form.name.data
-        customers.table = form.table.data
+        customers.table_ = form.table_.data
         customers.fk_gid = form.fk_gid.data
-        db.session.commit() 
+        db.session.commit()
         return redirect(url_for('index'))
     elif request.method == 'GET':
         form.name.data = customers.name 
