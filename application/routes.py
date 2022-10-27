@@ -14,7 +14,7 @@ def index():
 
 # CREATE game items 
 @app.route('/addgame', methods=['POST', 'GET'])
-def listadd():
+def gameadd():
     form = GameForm() 
     if form.validate_on_submit(): 
         games = Games(
