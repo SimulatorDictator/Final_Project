@@ -4,7 +4,7 @@
 
 For this project I was given the brief to design, produce, and deploy a flask web app of my choosing. The app must include integration with a MySQL database, and CRUD functionality. It must contain at least two tables sharing a one-to-many relationship. The structure of this app is shown in the diagram below.
 
-![Component-level Diagram](https://user-images.githubusercontent.com/111743157/198572937-c83efeb6-cb41-4157-be68-c1e02c9635c2.jpg)
+![Component-level Diagram](https://user-images.githubusercontent.com/111743157/198574205-273effbf-f633-463f-912d-6e30fbaa0e97.jpg)
 
 The app must be hosted and deployed using containers, and a CI/CD pipeline must be used to automatically test, build, and delpoy the application. 
 
