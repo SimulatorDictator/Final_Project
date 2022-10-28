@@ -9,7 +9,7 @@ from application.models import Games, Customers
 
 class CustomerForm(FlaskForm):
     name = StringField("Name")
-    table = IntegerField("Table number")
+    table_ = IntegerField("Table number")
     fk_gid = IntegerField("Game ID")
     submit = SubmitField("Submit")
 
