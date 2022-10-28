@@ -1,6 +1,6 @@
 # Board Game Reservations App
 
-Project Brief
+## Project Brief
 
 For this project I was given the brief to design, produce, and deploy a flask web app of my choosing. The app must include integration with a MySQL database, and CRUD functionality. It must contain at least two tables sharing a one-to-many relationship. The structure of this app is shown in the diagram below.
 
