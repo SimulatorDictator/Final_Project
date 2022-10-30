@@ -5,8 +5,8 @@ pipeline {
             steps {
                 dir('flask-app'){
                     sh "echo this is a test"
-                    sh "rm application/test/test_int*"
-                    sh "bash test.sh"
+                    // sh "rm application/test/test_int*"
+                    // sh "bash test.sh"
                 }
             }
         }
