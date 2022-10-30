@@ -3,16 +3,16 @@
 <h1> Welcome to the Board Game Cafe! </h1>
 
 {% for games in games %}
-<p>{{ games.gid }}</p>
-<p>{{ games.name }}</p>
-<p>{{--------------------}}</p>
+<p>ID: {{ games.gid }}</p>
+<p>Game: {{ games.name }}</p>
+<p>--------------------</p>
 
 
 {% endfor %}
 
 {% for customers in customers %}
 
-<p>{{ customers.cid}}</p>
+<p>{{ customers.cid }}</p>
 <p>{{ customers.name }}</p>
 <p>{{ customers.table_ }}</p>
 <p>{{ customers.fk_gid }}</p>
