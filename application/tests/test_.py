@@ -1,6 +1,7 @@
 from flask import url_for 
 from flask_testing import TestCase
-from application import app, db
+import app
+from application import db
 from application.models import Games, Customers
 
 # This creates the test base class.
@@ -18,8 +19,9 @@ class TestBase(TestCase):
     def setUp(self):
         db.create_all()
         game1 = Games(name="TestGame1")
-        customer1 = Customers(name="TestName1", table="1", fk_gid="1")
         db.session.add(game1)
+        db.session.commit()
+        customer1 = Customers(name="TestName1", table="1", fk_gid=game1.gid)
         db.session.add(customer1)
         db.session.commit()
 
