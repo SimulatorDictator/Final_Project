@@ -1,4 +1,3 @@
 data.db 
 flask-app/application/__pycache__
 .vscode/settings.json
-.coverage
