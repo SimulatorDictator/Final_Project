@@ -2,20 +2,25 @@
 
 <h1> Welcome to the Board Game Cafe! </h1>
 
+<h2> Games in stock: </h2>
+
 {% for games in games %}
+
 <p>ID: {{ games.gid }}</p>
 <p>Game: {{ games.name }}</p>
 <p>--------------------</p>
 
-
 {% endfor %}
+
+<h2> Current reservations: </h2>
 
 {% for customers in customers %}
 
-<p>{{ customers.cid }}</p>
-<p>{{ customers.name }}</p>
-<p>{{ customers.table_ }}</p>
-<p>{{ customers.fk_gid }}</p>
+<p>ID: {{ customers.cid }}</p>
+<p>Name: {{ customers.name }}</p>
+<p>Table: {{ customers.table_ }}</p>
+<p>Game: {{ customers.fk_gid }}</p>
+<p>--------------------</p>
 
 {% endfor %}
 
