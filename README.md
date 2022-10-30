@@ -46,9 +46,10 @@ Below is the risk assessment for the project. It has been updated with issues I 
 
 Testing is required for the project. In this case, unit testing using pycharm was implemented. This tests the functionality of the app. Unit tests were written for the create, read, update, and delete functionality. These tests feed in a test game, and a test reservation. Using this information, we are testing that the routes of my app return a 200 response.
 
-The tests will be automatically run via Jenkins using a webhook whenever a change is made to the code.
+The tests I have written currently have poor coverage, as they encounter import error. This has been added to my list of work for the future. The coverage is shown below, with test_.py only reaching 5% coverage.
 
-Unfortunately, the tests do not run in their current state.
+![test coverage](https://user-images.githubusercontent.com/111743157/198889848-9f177e53-f7d2-4416-bec7-9b329158404b.png)
+
 
 ## Future Work
 
@@ -56,7 +57,7 @@ My first priority is creating functioning tests. This will ensure that my applic
 
 Currently, I am using two virtual machine. The master node is also hosting Jenkins. In the future I will run Jenkins on a third separate machine.
 
-I will implement environment variables to ensure that sensitive informatio is not uploaded to GitHub.
+I will implement environment variables to ensure that sensitive information is not uploaded to GitHub.
 
 I would like to implement a queue system for board game reservations. As two customers can reserve one board game, it would be useful to see who reserved it first, and at what time.
 
