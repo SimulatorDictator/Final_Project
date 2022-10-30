@@ -1,4 +1,7 @@
 {% block body_content %}
+
+Reserve a geme:
+
     <form action="" method="POST">
         {{ form.hidden_tag() }}
         <p> Name: {{ form.name }}</p>
@@ -6,4 +9,5 @@
         <p> Game ID: {{ form.fk_gid }}</p>
         {{ form.submit }}
     </form>
+
 {% endblock body_content %}
