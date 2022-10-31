@@ -46,7 +46,7 @@ Below is the risk assessment for the project. It has been updated with issues I 
 
 Testing is required for the project. In this case, unit testing using pycharm was implemented. This tests the functionality of the app. Unit tests were written for the create, read, update, and delete functionality. These tests feed in a test game, and a test reservation. Using this information, we are testing that the routes of my app return a 200 response.
 
-The tests I have written currently have poor coverage, as they encounter import error. This has been added to my list of work for the future. The coverage is shown below, with test_.py only reaching 5% coverage.
+The tests I have written currently have poor coverage, as they encounter import error. This has been added to my list of work for the future. The coverage is shown below, with test_.py only reaching 5% coverage. The tests have not been integrated into the Jenkins pipeline.
 
 ![test coverage](https://user-images.githubusercontent.com/111743157/198889848-9f177e53-f7d2-4416-bec7-9b329158404b.png)
 
