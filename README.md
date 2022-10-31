@@ -55,6 +55,7 @@ The tests I have written currently have poor coverage, as they encounter import 
 Below is a video demonstrating the CRUD functionality of my app, as well as the automatic deployment via Jenkins after a push is made to the Git repository.
 
 https://drive.google.com/file/d/1yXqljGwLAESJnlBbVreiWp5QkTXdaO-Q/view?usp=sharing
+https://drive.google.com/file/d/1tmEVO2GMUJaY8GaQmUVrEOQw2jqxZVgi/view?usp=sharing
 
 ## Future Work
 
