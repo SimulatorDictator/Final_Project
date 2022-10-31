@@ -50,6 +50,11 @@ The tests I have written currently have poor coverage, as they encounter import 
 
 ![test coverage](https://user-images.githubusercontent.com/111743157/198889848-9f177e53-f7d2-4416-bec7-9b329158404b.png)
 
+## The App
+
+Below is a video demonstrating the CRUD functionality of my app, as well as the automatic deployment via Jenkins after a push is made to the Git repository.
+
+https://drive.google.com/file/d/1yXqljGwLAESJnlBbVreiWp5QkTXdaO-Q/view?usp=sharing
 
 ## Future Work
 
